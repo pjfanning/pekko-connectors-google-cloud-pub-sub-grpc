@@ -38,4 +38,4 @@ jobs:
       - name: run test
         run: |-
           docker-compose up -d gcloud-pubsub-emulator
-          sbt test
+          sbt +test

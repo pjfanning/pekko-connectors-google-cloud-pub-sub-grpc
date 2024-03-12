@@ -1,6 +1,8 @@
 ThisBuild / version := "1.0.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "2.13.13"
+val scala213Version = "2.13.13"
+ThisBuild / scalaVersion := scala213Version
+ThisBuild / crossScalaVersions := Seq(scala213Version, "2.12.19", "3.3.3")
 
 ThisBuild / resolvers += Resolver.ApacheMavenSnapshotsRepo
 
