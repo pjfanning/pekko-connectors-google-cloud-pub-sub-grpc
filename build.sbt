@@ -14,6 +14,7 @@ val protobufJavaVersion = "3.25.3"
 lazy val root = (project in file("."))
   .settings(
     name := "pekko-connectors-google-cloud-pub-sub-grpc",
+    licenses := List(License.Apache2),
     libraryDependencies ++= Seq(
       "com.google.cloud" % "google-cloud-pubsub" % "1.127.1" % "protobuf-src",
       "io.grpc" % "grpc-auth" % org.apache.pekko.grpc.gen.BuildInfo.grpcVersion,
